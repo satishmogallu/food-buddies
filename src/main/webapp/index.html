@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Login Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  	<script>
+	    function validateForm() {
+
+	    	var un = document.loginform.username.value;
+	        var pw = document.loginform.password.value;
+
+	        if ((un == "") && (pw == "")) {
+				alert ("Username or password can't be empty");
+	            return false;
+	        }
+	        else if((un == "")) {
+				alert ("Username can't be empty");
+	            return false;
+	        }
+	        else if((pw == "")) {
+				alert ("Password can't be empty");
+	            return false;
+	        }
+	        else {
+	            return true;
+	        }
+	      }
+	</script>
+</head>
+
+<body>
+
+  <form name="loginform" class="login-form" onsubmit="return validateForm()" action="LoginServlet" method="post">
+	
+		<div class="header">
+		<h1 style="text-align:center">Welcome to <br>Food Buddies</h1>
+		<span>Please, fill this form</span>
+		</div>
+	
+		<div class="content">
+		<input name="username" type="text" class="input username" placeholder="Username" />
+		<div class="user-icon"></div>
+		<input name="password" type="test" class="input password" placeholder="Password" />
+		<div class="pass-icon"></div>		
+		</div>
+
+		<div class="footer">
+		<!--  <a onClick="validateForm()" href="javascript:document.loginform.submit()" method="post" class="button">Login</a> -->
+			<input type="submit" value="Login" class="button"/>
+		</div>
+        <p class="message">Forgot Password? <a href="#">Create an account &rarr;</a></p>
+        </div>
+	</form>
+  
+  
+</body>
+</html>

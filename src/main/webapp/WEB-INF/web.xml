@@ -1,0 +1,79 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<display-name>LoginServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.hpe.ahold.controler.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Welcome</servlet-name>
+  	<display-name>Welcome</display-name>
+  	<description></description>
+  	<servlet-class>com.hpe.ahold.controler.Welcome</servlet-class>
+  </servlet>
+    <servlet>
+  	<servlet-name>FoodItemsDisplay</servlet-name>
+  	<display-name>FoodItemsDisplay</display-name>
+  	<description></description>
+  	<servlet-class>com.hpe.ahold.controler.FoodItemsDisplay</servlet-class>
+  </servlet>
+    <servlet>
+  	<servlet-name>MyCartServlet</servlet-name>
+  	<display-name>MyCartServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.hpe.ahold.controler.MyCartServlet</servlet-class>
+  </servlet>
+    <servlet>
+  	<servlet-name>CartItemsDisplay</servlet-name>
+  	<display-name>CartItemsDisplay</display-name>
+  	<description></description>
+  	<servlet-class>com.hpe.ahold.controler.CartItemsDisplay</servlet-class>
+  </servlet>
+    <servlet>
+  	<servlet-name>FoodItemsDisplayByStoreName</servlet-name>
+  	<display-name>FoodItemsDisplayByStoreName</display-name>
+  	<description></description>
+  	<servlet-class>com.hpe.ahold.controler.FoodItemsDisplayByStoreName</servlet-class>
+  </servlet>
+      <servlet>
+  	<servlet-name>MapServlet</servlet-name>
+  	<display-name>MapServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.hpe.ahold.controler.MapServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Welcome</servlet-name>
+  	<url-pattern>/Welcome</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+  	<servlet-name>FoodItemsDisplay</servlet-name>
+  	<url-pattern>/FoodItemsDisplay</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+  	<servlet-name>MyCartServlet</servlet-name>
+  	<url-pattern>/MyCartServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CartItemsDisplay</servlet-name>
+  	<url-pattern>/CartItemsDisplay</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+  	<servlet-name>FoodItemsDisplayByStoreName</servlet-name>
+  	<url-pattern>/FoodItemsDisplayByStoreName</url-pattern>
+  </servlet-mapping>
+    <servlet-mapping>
+  	<servlet-name>MapServlet</servlet-name>
+  	<url-pattern>/MapServlet</url-pattern>
+  </servlet-mapping>
+  
+    
+</web-app>

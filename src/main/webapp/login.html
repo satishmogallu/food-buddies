@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sample login page for food buddy</title>
+<style type="text/css">
+.cred{
+   color: black;font-size: 30px;font-family:'Berlin Sans FB';text-align:center;
+   }
+.example{
+   color: black;font-size: 12px;font-family:'arial';text-align:center; color: #616A6B;
+   }
+      
+  .bottom{
+   color: black;font-size: 12px;font-family:'Arial';text-align:centre;
+   }
+   input{
+    width: 15%;
+    padding: 15px 10px;
+    margin: 2px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 15%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 6px 0;
+    border: none;
+    border-radius: 4px;
+	font-family: 'Berlin Sans FB';
+}
+	input[type=submit]:hover {
+    background-color: #45a049;
+    cursor: pointer;
+}
+
+#footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   height:30px;
+   width:100%;
+   text-align:center;
+   margin-bottom:2%;
+} 
+
+
+  </style>
+    	<script>
+	    function validateForm() {
+
+			
+	    	var un = document.loginform.username.value;
+	        var pw = document.loginform.password.value;
+			
+	        if ((un == "") && (pw == "")) {
+				alert ("Username or password can't be empty");
+			
+	            return false;
+	        }
+	        else if((un == "")) {
+				alert ("Username can't be empty");
+	            return false;
+	        }
+	        else if((pw == "")) {
+				alert ("Password can't be empty");
+	            return false;
+	        }
+	        else {
+	            return true;
+	        }
+	      }
+	    function AvoidSpace(event) {
+	        var k = event ? event.which : window.event.keyCode;
+	        if (k == 32) return false;
+	    }
+	</script>
+</head>
+<body background="images/bl.jpg">
+<form  name="loginform"  onsubmit="return validateForm()" action="LoginServlet" method="post" > 
+<p class="cred"><img src="images/logo.jpg" alt="Test Image" /></p>
+<p class="cred">Username <input type="text" name="username" onkeypress="return AvoidSpace(event)" required></p>
+<p class="cred">Password <input type="password" name="password" onkeypress="return AvoidSpace(event)" required></p>
+<p class="cred"><input type="submit" value="Login" style="font-family: Berlin Sans FB; font-size: 30px;" /></p>
+
+
+</form>
+<div id=footer>
+	<p>
+		©1990-2016 Peapod, LLC All Rights Reserved. 1-800-5-PEAPOD (1-800-573-2763)<br>
+		All trademarks and copyrights held by respective owners.
+	</p>
+	<br><br>
+</div> 
+
+
+</body>
+</html>

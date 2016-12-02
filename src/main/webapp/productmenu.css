@@ -1,0 +1,132 @@
+@charset "utf-8";
+/* CSS Document */
+
+	*{
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+	.demo-ad-top{
+		margin:20px auto;
+		width:728px;
+	}
+	h1{
+		text-align:center;
+	}
+	.menu{
+		width:1010px;
+		position:relative;
+		margin:80px auto 0 auto;
+	}
+	.menu li{
+		float:left;
+		width:200px;
+		height:200px;
+		margin:1px;
+	}
+	.menu li a{
+		display:block;
+		overflow:hidden;
+		background:#fff;
+		text-align:center;
+		height:100%;
+		width:100%;
+		position:relative;
+		-moz-box-shadow:1px 1px 2px #ddd;/* firefox */
+		-webkit-box-shadow:1px 1px 2px #ddd;/* Safari and Chrome */
+		box-shadow:1px 1px 2px #ddd;
+	}
+	.menu li.home a:hover{
+		background:#37c5e9;
+	}
+	.menu li.about a:hover{
+		background:#ff395e;
+	}
+	.menu li.service a:hover{
+		background:#57e676;
+	}
+	.menu li.portfolio a:hover{
+		background:#d869b2;
+	}
+	.menu li.contact a:hover{
+		background:#ffdd3f;
+	}
+	.menu li a h2{
+		color:#000;
+		font-family: 'Wire One', arial, serif; 
+		font-size:42px;
+		font-weight:bold;
+		text-transform:uppercase;
+		position:absolute;
+		padding:10px;
+		width:180px;
+		top:130px;
+		left:0px;
+		text-shadow: 0px 1px 1px black;
+	}
+	.menu li a span{
+		width:100px;
+		height:100px;
+		position:absolute;
+		background-position:top left;
+		background-repeat:no-repeat;
+		background-color:transparent;
+		left:50px;
+		top:20px;
+	}
+	.home a span{
+		background-image:url(addfood.png);
+	}
+	.about a span{
+		background-image:url(find_food_yard.png);
+	}
+	.service a span{
+		background-image:url(invite.png);
+	}
+	.portfolio a span{
+		background-image:url(account.png);
+	}
+	.contact a span{
+		background-image:url(message.png);
+	}
+	li:hover h2{
+		-moz-animation:animation1 .30s linear;/* firefox */
+		-webkit-animation:animation1 .30s linear;/* Safari and Chrome */
+	}
+	li:hover span{
+		-moz-animation:animation2 .60s linear;/* firefox */
+		-webkit-animation:animation2 .60s linear;/* Safari and Chrome */
+	}
+	@keyframes animation1 {
+		0%  {margin-top:-180px;}
+		100%{  margin-top:0px; }		
+	}
+	@keyframes animation2 {
+		0%  {margin-top:-180px;}
+		50%  {margin-top:10px;}
+		75%  {margin-top:-15px;}
+		100%{  margin-top:0px; }	
+	}
+	/* firefox */
+	@-moz-keyframes animation1 {
+		0%  {margin-top:-180px;}
+		100%{  margin-top:0px; }		
+	}
+	@-moz-keyframes animation2 {
+		0%  {margin-top:-180px;}
+		50%  {margin-top:10px;}
+		75%  {margin-top:-15px;}
+		100%{  margin-top:0px; }	
+	}
+	/* Safari and Chrome */
+	@-webkit-keyframes animation1 {
+		0%  {margin-top:-180px;}
+		100%{  margin-top:0px; }		
+	}
+	@-webkit-keyframes animation2 {
+		0%  {margin-top:-180px;}
+		50%  {margin-top:10px;}
+		75%  {margin-top:-15px;}
+		100%{  margin-top:0px; }	
+	}
+	

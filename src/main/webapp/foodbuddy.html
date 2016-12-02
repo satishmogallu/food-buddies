@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FoodBuddy</title>
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style type="text/css">
+.peapod {
+	color: black;
+	font-size: 30px;
+	font-family: 'Berlin Sans FB';
+	text-align: left;
+}
+
+.bottom {
+	color: black;
+	font-size: 12px;
+	font-family: 'Arial';
+	text-align: centre;
+}
+
+input[type=text] {
+	width: 200px;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	font-size: 16px;
+	background-color: white;
+	background-image: url('images\search-icon.png');
+	background-position: 10px 10px;
+	background-repeat: no-repeat;
+	padding: 12px 20px 12px 40px;
+	-webkit-transition: width 0.4s ease-in-out;
+	transition: width 0.4s ease-in-out; .
+	p {color: black;
+	font-size: 30px;
+	font-family: 'Berlin Sans FB';
+	text-align: left;
+}
+
+}
+input[type=text]:focus {
+	width: 16%;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+}
+
+ul.tab {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
+
+/* Float the list items side by side */
+ul.tab li {
+	float: left;
+}
+
+/* Style the links inside the list items */
+ul.tab li a {
+	display: inline-block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: 0.5s;
+	font-size: 17px;
+	font-family: 'Berlin Sans FB';
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+	background-color: #DCDCDC;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+	background-color: #FAF0E6;
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #F8F8FF;
+	border-top: none;
+}
+
+#footer {
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	height: 30px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 2%;
+}
+</style>
+</head>
+<body background="images\bl.jpg">
+<div class="header">
+	<img src="images\logo.jpg" alt="Peapod" width=18% height=18%
+		style="vertical-align: bottom">
+
+	<p font face="Berlin Sans FB"
+		style="display: block; position: absolute; top: 4%; left: 92%;">
+		<a href="file:login.html"><b>Logout</b></a>
+	</p>
+	<img
+		style="display: block; position: absolute; width: 20%; height: 15%; top: 7%; left: 40%; margin-top: -33px; margin-left: -33px;"
+		src="images\Food_buddy.PNG" />
+	<br>
+	<h2>
+		<font face="Berlin Sans FB" color="#2F4F4F"><center>Heaven...feaven...foaven...fooven...fooden...food-buddy!</center></font>
+	</h2>
+	<br>
+	<ul class="tab">
+		<li><a href="FoodItemsDisplay" class="tablinks"
+			onclick="openCity(event, 'HOME')">FOOD YARD</a></li>
+		<li><a href="#" class="tablinks">PANTRY BUSTERS</a></li>
+		<li><a href="#" class="tablinks"
+			onclick="openCity(event, 'ABOUT US')">DOLLAR STREACHERS</a></li>
+	</ul>
+</div>
+	<h2 class="w3-center">
+		<font face="Berlin Sans FB" size="5" color="#2F4F4F">Take a
+			view </font>
+	</h2>
+
+	<div class="w3-content w3-display-container">
+		<img class="mySlides" src="images\Oats.jpg" style="width: 50%">
+		<img class="mySlides" src="images\Farfalle.jpg" style="width: 50%">
+		<img class="mySlides" src="images\Ziti.jpg" style="width: 50%">
+		<a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+		<a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+	</div>
+
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) {
+				slideIndex = 1
+			}
+			if (n < 1) {
+				slideIndex = x.length
+			}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			x[slideIndex - 1].style.display = "block";
+		}
+	</script>
+	<div id=footer>
+		<p>
+			© Food Buddy 1996-2016 all rights reserved. Terms of Service and
+			Privacy Policy. <br> All trademarks and copyrights held by
+			respective owners.
+		</p>
+		<br> <br>
+	</div>
+
+</body>
+</html>
